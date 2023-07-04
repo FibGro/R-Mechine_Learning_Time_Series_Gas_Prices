@@ -15,3 +15,9 @@ The result can also be viewed in my Rpubs : https://rpubs.com/Fib_Gro/Gas_Price
 - Rmd File
 - csv File
 - png File
+
+# Conclusion 
+
+1. All models are considered not representative of forecasting the Henry Hub gas price. The visualization of the forecast illustrates that the forecast model has a different pattern from the data test. In addition, there is a lagging in the model compared to the original data. This conclusion is also confirmed by the high forecast error of MAPE in all models.
+2. Model TBATS is considered a better performance model compared to other models. However, this model still violates the normality of residual assumption.
+3. Improving the model can be done by tuning the hyperparameter for each model. Such as in ETS, we could change the alpha, beta or gamma in the parameter instead of just relying on the automated function. Another suggestion is to use another model to forecast the gas price, such as GBM (Geometric Brownian Motion) or an MRP (Mean Reverting Process) that is extensively used for modelling commodities price
